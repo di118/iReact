@@ -1,0 +1,22 @@
+<div class="row text-center"><br>
+
+    <img src="./assets/ask.png" alt="" class="img-circle img-thumbnail">
+
+    <p></p>
+    <p>Include your question in the form on the right then click Submit . You will be notified once someone adds an
+        answer to your question</p>
+
+    <div id="addForm">
+        <div class="input">
+            <input type="text" ng-model="$parent.addMe" name="addMe" id="addMe" placeholder="Your question here ... ">
+        </div>
+        <br>
+        <div class="input">
+            <button ng-click="addQ($$scope.addMe)">Submit</button>
+        </div>
+
+    </div>
+</div>
+
+{{message}}
+

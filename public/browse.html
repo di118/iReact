@@ -1,0 +1,24 @@
+<div class="row text-center">
+
+    <img src="./assets/browse.png" alt="" class="img-circle img-thumbnail">
+
+    <h1> Search for a question </h1>
+    <p>These are questions that people asked before. If you know the answer and you 100% sure it's the right one -
+        answer now. </p>
+</div>
+    <center>
+        <form class="navbar-form navbar-center">
+
+            <div class="form-group">
+
+                <input type="text" ng-model="$parent.searchMe" name="searchMe" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" ng-click="searchA()" class="btn btn-default"> Submit</button>
+        </form>
+        <br>
+
+        <center>
+            {{question}}
+            <br>
+            {{answer}}
+        </center>

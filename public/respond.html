@@ -1,0 +1,38 @@
+<div class="row text-center">
+
+    <img src="./assets/respond.png" alt="" class="img-circle img-thumbnail">
+
+    <h1> List of unanswered questions </h1>
+    <p>These are questions that people asked before. If you know the answer and you 100% sure it's the right one -
+        answer now. </p>
+    <p>{{message}}</p>
+    <center>
+        <table>
+            <th>Question</th>
+            <tr ng-repeat="x in names" ng-if="x.answer == null && x.question != null">
+
+                <td>{{ x.question }}</td>
+                <td></td>
+
+                <td>
+                <td id="addForm">
+                    <div class="input">
+                        <input type="text" ng-model="$parent.respondMe" name="respondMe"
+                               placeholder="Your response here ... ">
+                    </div>
+                </td>
+                <td></td>
+                <td>
+                    <div class="input">
+                        <button ng-click="respondQ(x.question, this.respondMe)">Respond</button>
+                    </div>
+
+
+                </td>
+            </tr>
+
+
+        </table>
+    </center>
+</div>
+
